@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(./resources/fonts/norse-bold-webfont.woff);
+    font-family: "Norse-Bold-2";
+    src: url(./resources/fonts/norse-bold-webfont.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --dark-grey: #4B4C4C;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.image-background{    
+    background-image: url(./resources/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 33%;
+}
+
+.logo-background{
+    height: 15%;
+    background-color: rgba(0,0,0,.5);
+    backdrop-filter: 3px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Norse-Bold", "Norse-Bold-2";
+    font-size: 60px;
+    font-weight: bold;
+    color:white;
+
+    padding: 10px 0;
+
+    position: relative;
+    top: 25%;
+}
+
+.main-wrapper{
+    min-width: 67%;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+
+}
+
+.form-wrapper{
+    background-color: white;
+
+    padding: 1.5rem 3rem;
+    min-height: 30%;
+
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.form-row{
+    display: flex;
+    gap: 5rem;
+    
+    padding: .5rem 0;
+
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+
+    font-size: .65rem;
+    color: slategrey;
+
+    min-width: 40%;
+}
+
+input{
+    height: 1.5rem;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+
+    padding: 10px 5px 5px 5px;
+
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    color: var(--dark-grey);
+
+}
+
+input:invalid{
+    border: 3px solid red;
+}
+
+input:focus-visible{
+    outline: none;
+}
+
+input:focus{
+    border: 3px solid steelblue;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+#pwd-error-text{
+    color: red;
+}
+
+.error{
+    border: 3px solid red;
+}
+
+.correct{
+    border: 3px solid green;
+}
+
+small{
+    font-size: .65rem;
+    color: lightslategrey;
+}
+
+.top-text,
+.bottom-text{
+    padding: 0 3rem;
+}
+
+.bottom-text{
+    font-size: .75rem;
+}
+
+.bottom-text > p > a{
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+
+.bottom-text > p > a:hover{
+    text-decoration: underline;
+}
+
+.bottom-text > p > a:active{
+    color: blue;
+}
+
+.bottom-text > p > a:visited{
+    color: purple;
+}
+
+p{
+    padding: .5rem 0;
+}
+
+button{
+    margin-bottom: 1rem;
+    padding: .75rem 2.5rem;
+
+    background-color: #596D48;
+    color: whitesmoke;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}

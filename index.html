@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Odin's Sign-Up Form</title>
+</head>
+<body>
+
+    
+    <section class="image-background">
+        <div class="logo-background">
+            <img src="./resources/images/odin-lined.png" alt="Odin logo" height="100%" width=auto>ODIN
+        </div>
+    </section>
+    
+    <section class="main-wrapper">
+        
+        <div class="top-text">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        
+        <form action="#" id="form" method="post" class="form-wrapper">
+            
+            <div class="form-row">
+                <legend>Let's do this</legend>
+            </div>
+
+            <div class="form-row">
+                <label for="first-name">FIRST NAME*<input name="first-name" type="text" id="first-name" minlength="2" maxlength="10" required autofocus></label>
+                <label for="last-name">LAST NAME*<input name="last-name" type="text" id="last-name" minlength="2" maxlength="20" required></label>
+            </div>
+
+            <div class="form-row">
+                <label for="email">EMAIL*<input name="email" type="email" id="email" placeholder="xxxxx@xxxx.xx" required></label>
+                <label for="phone">PHONE NUMBER*<input name="phone" type="tel" id="phone" pattern="[0-9]{4}[\-][0-9]{4}" placeholder="####-####" required></label>
+            </div>
+
+            <div class="form-row">
+                <label for="pwd">PASSWORD*<input name="pwd" type="password" id="pwd" class="password" required></label>
+                <label for="pwd2">CONFIRM PASSWORD*<input name="pwd2" type="password" id="pwd2" class="password" required></label>
+            </div>
+            <span id="pwd-error-text"></span>
+            
+            <p><small>*Required</small></p>
+
+        </form>
+        
+        <div class="bottom-text">
+            <button form="form">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
